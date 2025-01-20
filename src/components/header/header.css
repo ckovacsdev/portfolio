@@ -80,9 +80,36 @@
     justify-content: center;
 }
 
+.header-dropdown-item-icons{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 .header-dropdown-menu-item:hover{
     background-color: #404040;
-    color: white;
+}
+
+.dropdown-icon-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.dropdown-icon-container:hover{
+    background-color: #404040;
+}
+
+.dropdown-icon{
+    width: 35px;
+    height: 35px;
+}
+.gitlab-dropdown{
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
 }
 
 .mobile-menu-dropdown{
@@ -117,6 +144,9 @@
         justify-content: flex-start;
         margin-left: 30px;
     }
+    .header-dropdown-item-icons{
+        display: none;
+    }
 }
 
 
@@ -124,5 +154,8 @@
 @media screen and (max-width: 475px){
     .header-icon{
         display: none;
+    }
+    .header-dropdown-item-icons{
+        display: flex;
     }
 }

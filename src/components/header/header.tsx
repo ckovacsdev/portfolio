@@ -61,6 +61,16 @@ export const Header = () => {
                     <div className='header-dropdown-menu-item'> Work History </div>
                     <div className='header-dropdown-menu-item'> About Me </div>
 
+                    <div className='header-dropdown-item-icons'>
+                        <a href={LinkedInUrl} target='_blank' rel='noopener noreferrer' className='dropdown-icon-container'> 
+                            <img src={LinkedinIcon} alt="LinkedIn Icon with Link" className='dropdown-icon'/> 
+                        </a>
+
+                        <a href={GitHubUrl} target='_blank' rel='noopener noreferrer' className='dropdown-icon-container'> 
+                            <img src={GithubIcon} alt="GitHub Icon with Link" className='dropdown-icon gitlab-dropdown'/> 
+                        </a>
+                    </div>
+
                 </div>
             }
         </div>
