@@ -23,7 +23,7 @@ export const Header = () => {
         handleResize();
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize)
-    }, [])
+    }, []);
 
     return (
 
@@ -49,7 +49,6 @@ export const Header = () => {
                         <a href={GitHubUrl} target='_blank' rel='noopener noreferrer'> <img src={GithubIcon} alt="GitHub Icon with Link" className='header-icon github-icon'/> </a>
                         <div className='mobile-menu'>
                             <Hamburger toggled={isOpen} toggle={setOpen} size={40} color='white'/>
-
                         </div>
                     </div>
                 </div>

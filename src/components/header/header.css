@@ -61,9 +61,10 @@
 }
 
 .header-dropdown-menu{
-    width: 220px;
+    width: 180px;
     height: fit-content;
-    background-color: white;
+    background: #202020;
+    color: white;
     position: absolute;
     right: 0;
     margin-top: 100px;
@@ -72,7 +73,6 @@
 
 .header-dropdown-menu-item{
     width: 100%;
-    border: 1px solid black;
     height: 50px;
     text-align: center;
     display: flex;
