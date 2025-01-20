@@ -38,6 +38,7 @@
     display: flex;
     flex-direction: row;
     column-gap: 20px;
+    align-items: center;
 }
 
 .header-icon{
@@ -48,6 +49,10 @@
 .github-icon{
     -webkit-filter: invert(100%);
     filter: invert(100%);
+}
+
+.mobile-menu{
+    display: none;
 }
 
 @media screen and (max-width: 1100px){
@@ -63,6 +68,9 @@
     .section-links{
         display: none;
     }
+    .mobile-menu{
+        display: block
+    }
     .section-icons{
         margin-right: 30px;
     }
@@ -70,5 +78,11 @@
         width: 100%;
         justify-content: flex-start;
         margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 475px){
+    .header-icon{
+        display: none;
     }
 }
