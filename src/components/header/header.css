@@ -2,11 +2,11 @@
     height: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .header-section-container{
-    width: 33vw;
+    width: 34vw;
     display: flex;
     flex-direction: row;
     height: 100px;
@@ -49,4 +49,13 @@
 .github-icon{
     -webkit-filter: invert(100%);
     filter: invert(100%);
+}
+
+@media screen and (max-width: 1100px){
+    .section-icons{
+        width: 20vw;
+    }
+    .section-links{
+        width: 45vw;
+    }
 }

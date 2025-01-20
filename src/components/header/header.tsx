@@ -9,11 +9,11 @@ const GitHubUrl = 'https://github.com/ckovacsdev';
 export const Header = () => {
     return (
         <div className='header-container'>
-            <div className='header-section-container'>
+            <div className='header-section-container section-name'>
                 <h1 className='header-name'> Christian Kovacs </h1>
             </div>
 
-            <div className='header-section-container'>
+            <div className='header-section-container section-links'>
                 <div className='header-menu-links'>
                     <a href='#' className='header-menu-link'> Projects </a>
                     <a href='#' className='header-menu-link'> Work History </a>
@@ -21,7 +21,7 @@ export const Header = () => {
                 </div>
             </div>
 
-            <div className='header-section-container'>
+            <div className='header-section-container section-icons'>
                 <div className='header-icons'> 
                     <a href={LinkedInUrl} target='_blank' rel='noopener noreferrer'> <img src={LinkedinIcon} alt="LinkedIn Icon with Link" className='header-icon'/> </a>
                     <a href={GitHubUrl} target='_blank' rel='noopener noreferrer'> <img src={GithubIcon} alt="GitHub Icon with Link" className='header-icon github-icon'/> </a>
