@@ -6,19 +6,19 @@ import './header.css';
 export const Header = () => {
     return (
         <div className='header-container'>
-            <div className='header-name-container'>
+            <div className='header-section-container'>
                 <h1 className='header-name'> Christian Kovacs </h1>
             </div>
 
-            <div className='header-menu'>
+            <div className='header-section-container'>
                 <div className='header-menu-links'>
-                    <a href='#'> Projects </a>
-                    <a href='#'> Work History </a>
-                    <a href='#'> About Me </a>
+                    <a href='#' className='header-menu-link'> Projects </a>
+                    <a href='#' className='header-menu-link'> Work History </a>
+                    <a href='#' className='header-menu-link'> About Me </a>
                 </div>
             </div>
 
-            <div className='header-links-container'>
+            <div className='header-section-container'>
                 <div className='header-links'> 
                     {/* TODO
                         Linkedin Icon linking to my page
