@@ -22,7 +22,7 @@ export const Header = () => {
             </div>
 
             <div className='header-section-container'>
-                <div className='header-links'> 
+                <div className='header-icons'> 
                     <a href={LinkedInUrl} target='_blank' rel='noopener noreferrer'> <img src={LinkedinIcon} alt="LinkedIn Icon with Link" className='header-icon'/> </a>
                     <a href={GitHubUrl} target='_blank' rel='noopener noreferrer'> <img src={GithubIcon} alt="GitHub Icon with Link" className='header-icon github-icon'/> </a>
                 </div>

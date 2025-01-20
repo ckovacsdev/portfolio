@@ -14,11 +14,17 @@
     justify-content: center;
 }
 
+.header-menu-links{
+    display: flex;
+    flex-direction: row;
+    column-gap: 60px;
+}
+
 .header-name{
     color: white;
 }
 
-.header-links{
+.header-icons{
     display: flex;
     flex-direction: row;
     column-gap: 20px;
