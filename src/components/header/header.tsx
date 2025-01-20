@@ -25,7 +25,7 @@ export const Header = () => {
                         GitHub Icon linking to my page
                     */}
                     <img src={LinkedinIcon} alt="LinkedIn Icon with Link" className='header-icon'/>
-                    <img src={GithubIcon} alt="GitHub Icon with Link" className='github-icon'/>
+                    <img src={GithubIcon} alt="GitHub Icon with Link" className='header-icon github-icon'/>
 
                 </div>
             </div>
