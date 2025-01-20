@@ -40,7 +40,6 @@
     column-gap: 20px;
 }
 
-
 .header-icon{
     height: 30px;
     width: 30px;
@@ -57,5 +56,19 @@
     }
     .section-links{
         width: 45vw;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .section-links{
+        display: none;
+    }
+    .section-icons{
+        margin-right: 30px;
+    }
+    .section-name{
+        width: 100%;
+        justify-content: flex-start;
+        margin-left: 30px;
     }
 }
