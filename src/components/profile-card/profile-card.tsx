@@ -25,11 +25,11 @@ export const ProfileCard = () => {
                 <div className='profile-card-tech-stack'> 
                     <h4> My Tech Stack </h4>
                     <div className='profile-card-list'>
-                        <div className='profile-icon-name-pair'> <SiTypescript  size={'30px'} color={'#3178C6'} /> Typescript </div>
-                        <div className='profile-icon-name-pair'> <FaReact size={'30px'} color={'#61DBFB'} /> React </div>
-                        <div className='profile-icon-name-pair'> <FaGolang size={'35px'} color={'#29BEB0'} /> Go </div>
+                        <div className='profile-icon-name-pair'> <SiTypescript  size={'25px'} color={'#3178C6'} /> Typescript </div>
+                        <div className='profile-icon-name-pair'> <FaReact size={'25px'} color={'#61DBFB'} /> React </div>
                         <div className='profile-icon-name-pair'> <SiGraphql size={'25px'} color={'#E10098'} /> GraphQL </div>
-                        <div className='profile-icon-name-pair'> <AiOutlineDotNet size={'35px'} color={'#512bd4'} /> .NET Core </div>
+                        <div className='profile-icon-name-pair'> <AiOutlineDotNet size={'40'} color={'#512bd4'} /> .NET Core </div>
+                        <div className='profile-icon-name-pair'> <FaGolang size={'40px'} color={'#29BEB0'} /> Go </div>
                     </div>
                 </div>
            </div>

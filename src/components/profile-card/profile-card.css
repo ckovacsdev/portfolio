@@ -36,9 +36,9 @@
 .profile-card-list{
     display: flex;
     flex-direction: row;
-    column-gap: 25px;
     flex-wrap: wrap;
-
+    column-gap: 20px;
+    row-gap: 20px;
 }
 
 .profile-icon-name-pair{
@@ -46,7 +46,6 @@
     flex-direction: row;
     align-items: center;
     column-gap: 5px;
-    width: 125px;
 }
 
 @media screen and (max-width: 860px){
