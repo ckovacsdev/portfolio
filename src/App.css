@@ -9,7 +9,6 @@
 }
 
 .main-profile-content{
-  border: 1px solid red;
   height: 250px;
   display: flex;
   flex-direction: column;
