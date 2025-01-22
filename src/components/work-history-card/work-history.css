@@ -9,7 +9,7 @@
 }
 
 .work-history-item{
-    height: 200px;
+    height: 250px;
     width: 750px;
     display: flex;
     flex-direction: row;
@@ -34,7 +34,7 @@
 }
 
 .work-history-job-description{
-    width: 450px;
+    width: 475px;
     display: flex;
     flex-direction: column;
     row-gap: 10px;
