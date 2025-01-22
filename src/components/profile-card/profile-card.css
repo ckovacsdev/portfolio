@@ -8,6 +8,7 @@
     color: white;
     border: 1px solid #454545;
     padding: 15px;
+    border-radius: 15px;
 }
 
 .profile-card-name{

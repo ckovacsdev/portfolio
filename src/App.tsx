@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { Header } from './components/header/header';
 import { ProfileCard } from './components/profile-card/profile-card';
+import { WorkHistory } from './components/work-history-card/work-history';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <div className='main-profile-content'>
         <ProfileCard />
+        <WorkHistory />
       </div>
     </div>
   );
