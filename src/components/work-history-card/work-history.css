@@ -8,6 +8,11 @@
     margin-right: auto;    
 }
 
+.work-experience-header{
+    color: white;
+    margin: 1;
+}
+
 .work-history-item{
     height: 250px;
     width: 750px;
