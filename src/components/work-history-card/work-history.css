@@ -3,9 +3,12 @@
     width: 750px;
     min-width: 280px;
     padding: 15px;
-    height: 400px;
     margin-left: auto;
-    margin-right: auto;    
+    margin-right: auto;   
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px; 
+    height: auto;
 }
 
 .work-experience-header{
@@ -15,14 +18,12 @@
 
 .work-history-item{
     height: 250px;
-    width: 750px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .work-history-left-content{
-    width: 275px;
     align-self: flex-start;
 }
 
@@ -48,7 +49,7 @@
 .work-history-company{
     display: flex;
     flex-direction: row;
-    column-gap: 15px;;
+    column-gap: 15px;
 }
 
 .work-history-company-info{
@@ -74,6 +75,7 @@
 .work-history-company-logo{
     width: 50px;
     height: 50px;
+    background-color: white;
 }
 
 .work-history-job-details{
