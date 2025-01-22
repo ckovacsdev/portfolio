@@ -7,3 +7,79 @@
     margin-left: auto;
     margin-right: auto;    
 }
+
+.work-history-item{
+    height: 200px;
+    width: 750px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.work-history-left-content{
+    width: 275px;
+    align-self: flex-start;
+}
+
+.work-history-dates{
+    font-size: 16px;
+    margin: 0;
+    color: white;
+}
+
+.work-history-location{
+    color: #808080;
+    font-size: 16px;
+    margin: 0;
+}
+
+.work-history-job-description{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.work-history-company{
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;;
+}
+
+.work-history-company-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 0;
+}
+
+.work-history-company-name{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 18px;
+}
+.work-history-title{
+    padding: 0;
+    margin: 0;
+    color: #808080;
+    font-size: 16px;
+}
+
+.work-history-company-logo{
+    width: 50px;
+    height: 50px;
+}
+
+.work-history-job-details{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.work-history-job-details-text{
+    color: white;
+    font-size: 14px;
+    margin: 0;
+}
