@@ -22,7 +22,7 @@
 .header-menu-links{
     display: flex;
     flex-direction: row;
-    column-gap: 60px;
+    column-gap: 50px;
 }
 
 .header-menu-link{
@@ -44,6 +44,8 @@
     flex-direction: row;
     column-gap: 20px;
     align-items: center;
+    justify-items: flex-start;
+    height: 40px;
 }
 
 .header-icon{
@@ -54,6 +56,13 @@
 .github-icon{
     -webkit-filter: invert(100%);
     filter: invert(100%);
+}
+
+.header-email-button{
+    color: none;
+    background-color: #111111;
+    border: 0;
+    cursor: pointer;
 }
 
 .mobile-menu{
@@ -118,14 +127,13 @@
 .mobile-menu-dropdown{
     width: 200px;
     height: 300px;
-    border: 1px solid red;
     margin-top: 600px;
     margin-right: 400px;
 }
 
 @media screen and (max-width: 1100px){
     .section-icons{
-        width: 20vw;
+        width: 30vw;
     }
     .section-links{
         width: 45vw;
@@ -152,11 +160,21 @@
     }
 }
 
-@media screen and (max-width: 475px){
+@media screen and (max-width: 550px){
     .header-icon{
+        display: none;
+    }
+    .header-email-button{
         display: none;
     }
     .header-dropdown-item-icons{
         display: flex;
     }
+}
+
+.email-button-sub{
+    color: none;
+    border: 0;
+    cursor: pointer;
+    background-color: #202020;
 }
