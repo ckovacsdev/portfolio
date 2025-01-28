@@ -4,9 +4,8 @@ import './work-history.css';
 
 export const WorkHistory = () => {
     return(
-        <div>
-            <h1 className='work-experience-header'> Work Experience </h1>
-            <div className='work-history-container'>
+        <div className='work-history-container'>
+            <div>
                 <div className='work-history-item'>
 
                     <div className='work-history-left-content'>
