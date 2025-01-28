@@ -5,7 +5,6 @@ import './work-history.css';
 export const WorkHistory = () => {
     return(
         <div className='work-history-container'>
-            <div>
                 <div className='work-history-item'>
 
                     <div className='work-history-left-content'>
@@ -95,7 +94,6 @@ export const WorkHistory = () => {
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
 
     )

@@ -1,13 +1,15 @@
 .work-history-container{
     width: 750px;
     min-width: 280px;
-    height: auto;
     margin-left: auto;
     margin-right: auto;
-    color: white;
-    border: 1px solid #454545;
+    border-left: 1px solid #454545;
     padding: 15px;
-    border-radius: 15px;
+    height: auto;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 75px;
 }
 
 .work-experience-header{
@@ -16,7 +18,6 @@
 }
 
 .work-history-item{
-    height: 250px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -96,7 +97,7 @@
         margin: none;
     }
 
-    /* .work-history-item{
+    .work-history-item{
         display: flex;
         flex-direction: column;
         row-gap: 20px;
@@ -108,5 +109,5 @@
     }
     .work-history-job-description{
         width: auto;
-    } */
+    }
 }
