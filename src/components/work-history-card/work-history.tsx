@@ -55,13 +55,13 @@ export const WorkHistory = () => {
 
                     <div className='work-history-job-details'>
                         <p className='work-history-job-details-text'>
-                            Wrote React Typescript components for existing platform aiding in project to allow users to request automated GitLab templated repositories
+                            Wrote React Typescript UI & components for existing platform to allow users to request automated GitLab templated repositories
                         </p>
                         <p className='work-history-job-details-text'>
-                            Aided in API design and implementation of back-end .NET service to accept user data from front end, generate a repository, and return data to client 
+                            Aided in API design and implementation of .NET service to generate templated Gitlab repositories 
                         </p>
                         <p className='work-history-job-details-text'>
-                            Received an extension to continue working on the platform while finishing undergraduate degree, with a return offer upon graduation
+                            Received an extension to continue working on the platform while finishing undergraduate degree
                         </p>
                     </div>
                 </div>
