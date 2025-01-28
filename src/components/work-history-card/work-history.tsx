@@ -16,7 +16,7 @@ export const WorkHistory = () => {
 
                     <div className='work-history-job-description'> 
                         <div className='work-history-company'>
-                            <img className='work-history-company-logo' src={TCWIcon}/>
+                            <img className='work-history-company-logo' src={TCWIcon} alt='Tcw Logo'/>
                             <div className='work-history-company-info'>
                                 <p className='work-history-company-name'> The TCW Group </p>
                                 <p className='work-history-title'> Software Engineer | Platform Engineering </p>
@@ -49,7 +49,7 @@ export const WorkHistory = () => {
 
                     <div className='work-history-job-description'> 
                         <div className='work-history-company'>
-                            <img className='work-history-company-logo' src={TCWIcon}/>
+                            <img className='work-history-company-logo' src={TCWIcon} alt='Tcw Logo'/>
                             <div className='work-history-company-info'>
                                 <p className='work-history-company-name'> The TCW Group </p>
                                 <p className='work-history-title'> Software Engineering Intern | Platform Engineering </p>
@@ -79,7 +79,7 @@ export const WorkHistory = () => {
 
                     <div className='work-history-job-description'> 
                         <div className='work-history-company'>
-                            <img className='work-history-company-logo' src={CapelliIcon}/>
+                            <img className='work-history-company-logo' src={CapelliIcon} alt='Capelli Logo'/>
                             <div className='work-history-company-info'>
                                 <p className='work-history-company-name'> Capelli Sport </p>
                                 <p className='work-history-title'> Web Support Intern </p>
