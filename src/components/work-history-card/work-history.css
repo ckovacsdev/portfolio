@@ -1,9 +1,116 @@
 .work-history-container{
-    border-left: 1px solid #454545;
     width: 750px;
     min-width: 280px;
-    padding: 15px;
-    height: 400px;
     margin-left: auto;
-    margin-right: auto;    
+    margin-right: auto;
+    border-left: 1px solid #454545;
+    padding: 15px;
+    height: auto;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 75px;
+}
+
+.work-experience-header{
+    color: white;
+    margin: 1;
+}
+
+.work-history-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.work-history-left-content{
+    align-self: flex-start;
+}
+
+.work-history-dates{
+    font-size: 16px;
+    margin: 0;
+    color: white;
+}
+
+.work-history-location{
+    color: #808080;
+    font-size: 16px;
+    margin: 0;
+}
+
+.work-history-job-description{
+    width: 475px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.work-history-company{
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+}
+
+.work-history-company-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 0;
+}
+
+.work-history-company-name{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 18px;
+}
+.work-history-title{
+    padding: 0;
+    margin: 0;
+    color: #808080;
+    font-size: 16px;
+}
+
+.work-history-company-logo{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+
+.work-history-job-details{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.work-history-job-details-text{
+    color: white;
+    font-size: 14px;
+    margin: 0;
+}
+
+@media screen and (max-width: 860px){
+    .work-history-container{
+        width: 80vw;
+        margin: none;
+    }
+
+    .work-history-item{
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        height: auto;
+    }
+
+    .work-history-job-details{
+        width: auto;
+        row-gap: 25px;
+    }
+    .work-history-job-description{
+        width: auto;
+        row-gap: 30px;
+
+    }
 }
