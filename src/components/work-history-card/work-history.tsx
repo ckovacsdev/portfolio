@@ -66,6 +66,30 @@ export const WorkHistory = () => {
                     </div>
                 </div>
             </div>
+
+            <div className='work-history-item'>
+                <div className='work-history-left-content'>
+                    <h2  className='work-history-dates'> Dec 2021 - Feb 2022 </h2>
+                    <h2  className='work-history-location'> Teterboro, NJ </h2>
+                </div>
+                <div className='work-history-job-description'> 
+                    <div className='work-history-company'>
+                        <img className='work-history-company-logo' src={CapelliIcon} alt='Capelli Logo'/>
+                        <div className='work-history-company-info'>
+                            <p className='work-history-company-name'> Capelli Sport </p>
+                            <p className='work-history-title'> Web Support Intern </p>
+                        </div>
+                    </div>
+                    <div className='work-history-job-details'>
+                        <p className='work-history-job-details-text'>
+                            Reviewed and deployed over 200 e-Commerce sites for clients and created new templated pages upon client requests
+                        </p>
+                        <p className='work-history-job-details-text'>
+                            Maintained schedules for edits, stock quantities and order analytics, communicating with sales and marketing
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

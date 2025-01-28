@@ -100,14 +100,17 @@
     .work-history-item{
         display: flex;
         flex-direction: column;
-        row-gap: 20px;
+        row-gap: 30px;
         height: auto;
     }
 
     .work-history-job-details{
         width: auto;
+        row-gap: 25px;
     }
     .work-history-job-description{
         width: auto;
+        row-gap: 30px;
+
     }
 }
