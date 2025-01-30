@@ -8,3 +8,25 @@
     border-left: 1px solid #454545;
     padding: 15px;
 }
+
+.education-card-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.education-card-left-content{
+    align-self: flex-start;
+}
+
+.education-card-dates{
+    font-size: 16px;
+    margin: 0;
+    color: white;
+}
+
+.education-card-location{
+    color: #808080;
+    font-size: 16px;
+    margin: 0;
+}
