@@ -15,9 +15,16 @@ export const EducationCard = () => {
                         <img className='education-card-school-logo' src={NYULogo} alt='NYU Logo'/>
                         <div className='education-card-info'>
                             <p className='education-card-school-name'> New York University </p>
-                            <p className='education-card-degree-title'> B.A in Computer Science </p>
+                            <p className='education-card-degree-title'> B.A in Computer Science | Courant Institute </p>
                         </div>
                     </div>
+
+                    <div className='education-card-details'>
+                        <p className='education-card-details-text'>
+                            Redesigned and developed front-end in React Typescript for main developer platform
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </div>
