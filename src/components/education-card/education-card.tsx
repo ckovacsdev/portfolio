@@ -21,7 +21,7 @@ export const EducationCard = () => {
 
                     <div className='education-card-details'>
                         <p className='education-card-details-text'>
-                            Redesigned and developed front-end in React Typescript for main developer platform
+                            Relevant Coursework: Data Structures, Algorithms, Operating Systems, Computer Systems Organization, Discrete Math, Calculus, Applied Internet Technology, Software Engineering, Natural Language Processing
                         </p>
                     </div>
 
