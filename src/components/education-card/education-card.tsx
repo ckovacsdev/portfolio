@@ -1,3 +1,4 @@
+import NYULogo from '../../assets/nyu_logo.png';
 import './education-card.css';
 
 export const EducationCard = () => {
@@ -9,30 +10,15 @@ export const EducationCard = () => {
                     <h2  className='education-card-location'> New York, NY</h2>
                 </div>
 
-                {/* <div className='work-history-job-description'> 
-                    <div className='work-history-company'>
-                        <img className='work-history-company-logo' src={TCWIcon} alt='Tcw Logo'/>
-                        <div className='work-history-company-info'>
-                            <p className='work-history-company-name'> The TCW Group </p>
-                            <p className='work-history-title'> Software Engineer | Platform Engineering </p>
+                <div className='education-card-description'> 
+                    <div className='education-card-school'>
+                        <img className='education-card-school-logo' src={NYULogo} alt='NYU Logo'/>
+                        <div className='education-card-info'>
+                            <p className='education-card-school-name'> New York University </p>
+                            <p className='education-card-degree-title'> B.A in Computer Science </p>
                         </div>
                     </div>
-
-                    <div className='work-history-job-details'>
-                        <p className='work-history-job-details-text'>
-                            Redesigned and developed front-end in React Typescript for main developer platform
-                        </p>
-                        <p className='work-history-job-details-text'>
-                            Wrote, Tested and Maintained microservices in Go and .NET
-                        </p>
-                        <p className='work-history-job-details-text'>
-                            Gave Lunch & Learn Presentations for 60-80 people on Gitlab CI/CD and Green Programming
-                        </p>
-                        <p className='work-history-job-details-text'>
-                            Trained and guided interns on team's tech stack and projects
-                        </p>
-                    </div>
-                </div> */}
+                </div>
             </div>
         </div>
     )
