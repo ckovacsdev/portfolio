@@ -3,7 +3,8 @@
   padding: 0;
   margin: 0;
   border: 0;
-  height: fit-content;
+  height: auto;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
 }
@@ -14,4 +15,27 @@
   row-gap: 75px;
   align-items: center;
   margin-top: 40px;
+}
+
+.home-page-block{
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+}
+
+.home-page-title{
+  width: 750px;
+  min-width: 280px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 26px;
+}
+
+@media screen and (max-width: 860px){
+  .home-page-title{
+      width: 80vw;
+      margin: none;
+  }
 }
