@@ -17,6 +17,12 @@
   margin-top: 40px;
 }
 
+.home-page-block{
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+}
+
 .home-page-title{
   width: 750px;
   min-width: 280px;
@@ -24,7 +30,7 @@
   margin-left: auto;
   margin-right: auto;
   color: white;
-  padding: 15px;
+  font-size: 26px;
 }
 
 @media screen and (max-width: 860px){
