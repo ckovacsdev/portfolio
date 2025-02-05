@@ -10,9 +10,19 @@ function App() {
     <div className='portfolio-container'>
       <Header />
       <div className='main-profile-content'>
+
         <ProfileCard />
-        <WorkHistory />
-        <EducationCard />
+
+        <div>
+          <h1 className='home-page-title'> Work History </h1>
+          <WorkHistory />
+        </div>
+
+        <div>
+          <h1 className='home-page-title'> Education </h1>
+          <EducationCard />
+        </div>
+
       </div>
     </div>
   );
