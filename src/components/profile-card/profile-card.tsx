@@ -19,8 +19,7 @@ export const ProfileCard = () => {
            <div className='profile-card-description'>
                 <p> 
                     I am a software engineer with 2 years of professional experience working in web application development.
-                    I prefer a minimalist approach to projects
-                    , with both simple and clean interfaces, and simple and reliable microservice architecture.
+                    I prefer a minimalist approach to projects, with both simple and clean interfaces, and simple and reliable microservice architecture.
                 </p>
                 <div className='profile-card-tech-stack'> 
                     <h4> My Tech Stack </h4>
