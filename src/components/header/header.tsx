@@ -68,9 +68,10 @@ export const Header = () => {
             
             {isOpen &&
                 <div className='header-dropdown-menu'>
-                    <a href='#' className='header-dropdown-menu-item'> Projects </a>
-                    <a href='#work_history' className='header-dropdown-menu-item'> Work History </a>
-                    <a href='#education' className='header-dropdown-menu-item'> Education </a>
+                    
+                    <a href='#' onClick={() => setOpen(false)} className='header-dropdown-menu-item'> Projects </a>
+                    <a href='#work_history' onClick={() => setOpen(false)} className='header-dropdown-menu-item'> Work History </a>
+                    <a href='#education' onClick={() => setOpen(false)} className='header-dropdown-menu-item'> Education </a>
 
                     <div className='header-dropdown-item-icons'>
                         <a href={LinkedInUrl} target='_blank' rel='noopener noreferrer' className='dropdown-icon-container'> 
