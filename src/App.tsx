@@ -14,7 +14,7 @@ function App() {
         <ProfileCard />
 
         <div className='home-page-block'>
-          <h1 className='home-page-title'> Projects </h1>
+          <h1 className='home-page-title' id='projects'> Projects </h1>
         </div>
 
         <div className='home-page-block'>
