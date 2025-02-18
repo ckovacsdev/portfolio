@@ -29,10 +29,7 @@ export const WorkHistory = () => {
                         </p>
                         <p className='work-history-job-details-text'>
                             Gave Lunch & Learn Presentations for 60-80 people on Gitlab CI/CD and Green Programming
-                        </p>
-                        <p className='work-history-job-details-text'>
-                            Trained and guided interns on team's tech stack and projects
-                        </p>
+                        </p> 
                     </div>
                 </div>
             </div>
