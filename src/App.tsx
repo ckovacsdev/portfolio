@@ -13,6 +13,7 @@ function App() {
 
         <ProfileCard />
 
+        
         <div className='home-page-block' id='about_me'>
           <h1 className='home-page-title'> Work History </h1>
           <WorkHistory />
