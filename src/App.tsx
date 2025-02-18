@@ -13,8 +13,12 @@ function App() {
 
         <ProfileCard />
 
-        <div className='home-page-block' id='about_me'>
-          <h1 className='home-page-title'> Work History </h1>
+        <div className='home-page-block'>
+          <h1 className='home-page-title'> Projects </h1>
+        </div>
+
+        <div className='home-page-block'>
+          <h1 className='home-page-title' id='about_me'> Work History </h1>
           <WorkHistory />
         </div>
 
