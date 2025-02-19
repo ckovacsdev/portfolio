@@ -11,14 +11,12 @@ function App() {
       <Header />
       <div className='main-profile-content'>
 
-        <ProfileCard />
-
-        <div className='home-page-block'>
-          <h1 className='home-page-title' id='projects'> Projects </h1>
+        <div id='about_me'>
+          <ProfileCard />
         </div>
 
         <div className='home-page-block'>
-          <h1 className='home-page-title' id='about_me'> Work History </h1>
+          <h1 className='home-page-title'> Work History </h1>
           <WorkHistory />
         </div>
 
@@ -26,7 +24,10 @@ function App() {
           <h1 className='home-page-title'> Education </h1>
           <EducationCard />
         </div>
-
+        
+        <div className='home-page-block'>
+          <h1 className='home-page-title' id='projects'> Projects </h1>
+        </div>
       </div>
     </div>
   );
