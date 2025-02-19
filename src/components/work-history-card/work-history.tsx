@@ -1,6 +1,7 @@
 import TCWIcon from '../../assets/tcw-logo.png';
 import CapelliIcon from '../../assets/capelli-logo.png'
 import './work-history.css';
+import { Tag } from '../tag/tag';
 
 export const WorkHistory = () => {
     return(
@@ -30,6 +31,10 @@ export const WorkHistory = () => {
                         <p className='work-history-job-details-text'>
                             Gave Lunch & Learn Presentations for 60-80 people on Gitlab CI/CD and Green Programming
                         </p> 
+                    </div>
+                    <div className='work-history-tags'>
+                        <Tag name='TypeScript' />
+
                     </div>
                 </div>
             </div>
