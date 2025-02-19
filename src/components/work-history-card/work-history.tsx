@@ -44,7 +44,6 @@ export const WorkHistory = () => {
                         <Tag name='Go' icon={<FaGolang color={'#29BEB0'} size={'18px'} />}/>
                         <Tag name='.NET' icon={<SiDotnet color={'#512bd4'} size={'18px'} />}/>
                         <Tag name='GraphQL' icon={<SiGraphql color={'#E10098'} size={'18px'} />}/>
-
                     </div>
                 </div>
             </div>
@@ -75,6 +74,12 @@ export const WorkHistory = () => {
                         <p className='work-history-job-details-text'>
                             Received an extension to continue working on the platform while finishing undergraduate degree
                         </p>
+                    </div>
+
+                    <div className='work-history-tags'>
+                        <Tag name='TypeScript' icon={<SiTypescript color={'#3178C6'} size={'18px'} />}/>
+                        <Tag name='React' icon={<FaReact color={'#61DBFB'} size={'18px'} />}/>
+                        <Tag name='.NET' icon={<SiDotnet color={'#512bd4'} size={'18px'} />}/>
                     </div>
                 </div>
             </div>
