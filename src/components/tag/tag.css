@@ -1,8 +1,21 @@
 .tag-container{
-    border: 1px solid #808080;
+    border: 1px solid #7180AC;
     border-radius: 15px;
-    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 30px;
     width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.tag-icon{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
 }
 
 .tag-title{
