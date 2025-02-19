@@ -3,6 +3,12 @@ import { Tag } from '../tag/tag';
 import TCWIcon from '../../assets/tcw-logo.png';
 import './work-history.css';
 
+import { PiMapPinSimple } from "react-icons/pi";
+import { SiTypescript } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import { FaGolang } from "react-icons/fa6";
+import { SiGraphql } from "react-icons/si";
+import { AiOutlineDotNet } from "react-icons/ai";
 
 export const WorkHistory = () => {
     return(
@@ -34,7 +40,7 @@ export const WorkHistory = () => {
                         </p> 
                     </div>
                     <div className='work-history-tags'>
-                        <Tag name='TypeScript' />
+                        <Tag name='TypeScript' icon={<SiTypescript color={'#3178C6'} />}/>
 
                     </div>
                 </div>
