@@ -1,7 +1,8 @@
-import TCWIcon from '../../assets/tcw-logo.png';
-import CapelliIcon from '../../assets/capelli-logo.png'
-import './work-history.css';
+import CapelliIcon from '../../assets/capelli-logo.png';
 import { Tag } from '../tag/tag';
+import TCWIcon from '../../assets/tcw-logo.png';
+import './work-history.css';
+
 
 export const WorkHistory = () => {
     return(
