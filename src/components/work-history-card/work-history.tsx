@@ -40,7 +40,7 @@ export const WorkHistory = () => {
                         </p> 
                     </div>
                     <div className='work-history-tags'>
-                        <Tag name='TypeScript' icon={<SiTypescript color={'#3178C6'} />}/>
+                        <Tag name='TypeScript' icon={<SiTypescript color={'#3178C6'} size={'25px'} />}/>
 
                     </div>
                 </div>
