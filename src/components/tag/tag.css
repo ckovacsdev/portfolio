@@ -1,0 +1,26 @@
+.tag-container{
+    border: 1px solid #7180AC;
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.tag-icon{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.tag-title{
+    color: white;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}

@@ -1,6 +1,13 @@
+import CapelliIcon from '../../assets/capelli-logo.png';
+import { Tag } from '../tag/tag';
 import TCWIcon from '../../assets/tcw-logo.png';
-import CapelliIcon from '../../assets/capelli-logo.png'
 import './work-history.css';
+
+import { SiDotnet, SiTypescript } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import { FaGolang } from "react-icons/fa6";
+import { SiGraphql } from "react-icons/si";
+import { AiOutlineDotNet } from "react-icons/ai";
 
 export const WorkHistory = () => {
     return(
@@ -31,6 +38,13 @@ export const WorkHistory = () => {
                             Gave Lunch & Learn Presentations for 60-80 people on Gitlab CI/CD and Green Programming
                         </p> 
                     </div>
+                    <div className='work-history-tags'>
+                        <Tag name='TypeScript' icon={<SiTypescript color={'#3178C6'} size={'18px'} />}/>
+                        <Tag name='React' icon={<FaReact color={'#61DBFB'} size={'18px'} />}/>
+                        <Tag name='Go' icon={<FaGolang color={'#29BEB0'} size={'18px'} />}/>
+                        <Tag name='.NET' icon={<SiDotnet color={'#512bd4'} size={'18px'} />}/>
+                        <Tag name='GraphQL' icon={<SiGraphql color={'#E10098'} size={'18px'} />}/>
+                    </div>
                 </div>
             </div>
 
@@ -60,6 +74,12 @@ export const WorkHistory = () => {
                         <p className='work-history-job-details-text'>
                             Received an extension to continue working on the platform while finishing undergraduate degree
                         </p>
+                    </div>
+
+                    <div className='work-history-tags'>
+                        <Tag name='TypeScript' icon={<SiTypescript color={'#3178C6'} size={'18px'} />}/>
+                        <Tag name='React' icon={<FaReact color={'#61DBFB'} size={'18px'} />}/>
+                        <Tag name='.NET' icon={<SiDotnet color={'#512bd4'} size={'18px'} />}/>
                     </div>
                 </div>
             </div>

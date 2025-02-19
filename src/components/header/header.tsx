@@ -37,8 +37,8 @@ export const Header = () => {
 
                 <div className='header-section-container section-links'>
                     <div className='header-menu-links'>
-                        <a href='#projects' className='header-menu-link'> Projects </a>
                         <a href='#about_me' className='header-menu-link'> About Me </a>
+                        <a href='#projects' className='header-menu-link'> Projects </a>
                     </div>
                 </div>
 
@@ -68,8 +68,8 @@ export const Header = () => {
             {isOpen &&
                 <div className='header-dropdown-menu'>
                     
-                    <a href='#projects' onClick={() => setOpen(false)} className='header-dropdown-menu-item'> Projects </a>
                     <a href='#about_me' onClick={() => setOpen(false)} className='header-dropdown-menu-item'> About Me </a>
+                    <a href='#projects' onClick={() => setOpen(false)} className='header-dropdown-menu-item'> Projects </a>
 
                     <div className='header-dropdown-item-icons'>
                         <a href={LinkedInUrl} target='_blank' rel='noopener noreferrer' className='dropdown-icon-container'> 
