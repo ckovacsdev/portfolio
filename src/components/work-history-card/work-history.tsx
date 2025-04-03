@@ -7,7 +7,6 @@ import { SiDotnet, SiTypescript } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { FaGolang } from "react-icons/fa6";
 import { SiGraphql } from "react-icons/si";
-import { AiOutlineDotNet } from "react-icons/ai";
 
 export const WorkHistory = () => {
     return(
