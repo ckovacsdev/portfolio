@@ -26,6 +26,11 @@ export const Header = () => {
         return () => window.removeEventListener("resize", handleResize)
     }, []);
 
+    const copyEmail = () => {
+        let email:string = process.env.REACT_APP_CK_EMAIL as string;
+        navigator.clipboard.writeText(email)
+    }
+
     return (
 
         <div className='header'> 
@@ -52,7 +57,7 @@ export const Header = () => {
                             <img src={GithubIcon} alt="GitHub Icon with Link" className='header-icon github-icon'/> 
                         </a>
                         
-                        <button className='header-email-button'>
+                        <button className='header-email-button' onClick={() => copyEmail()}>
                             <AiOutlineMail color={'white'} size={'40px'} />
                         </button>
                  
@@ -80,7 +85,7 @@ export const Header = () => {
                             <img src={GithubIcon} alt="GitHub Icon with Link" className='dropdown-icon gitlab-dropdown'/> 
                         </a>
 
-                        <button className='dropdown-icon-container email-button-sub'> 
+                        <button className='dropdown-icon-container email-button-sub' onClick={() => copyEmail()}> 
                             <AiOutlineMail color={'white'} size={'40px'} />
                         </button>
                         
