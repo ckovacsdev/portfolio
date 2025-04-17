@@ -5,6 +5,7 @@ import './work-history.css';
 
 import { SiDotnet, SiTypescript } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
+import { FaDocker } from 'react-icons/fa';
 import { FaGolang } from "react-icons/fa6";
 import { SiGraphql } from "react-icons/si";
 
@@ -43,6 +44,8 @@ export const WorkHistory = () => {
                         <Tag name='Go' icon={<FaGolang color={'#29BEB0'} size={'18px'} />}/>
                         <Tag name='.NET' icon={<SiDotnet color={'#512bd4'} size={'18px'} />}/>
                         <Tag name='GraphQL' icon={<SiGraphql color={'#E10098'} size={'18px'} />}/>
+                        <Tag name='Docker'  icon={<FaDocker size={'25px'} color={'#1D63ED'} />} />
+                        
                     </div>
                 </div>
             </div>
