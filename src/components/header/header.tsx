@@ -29,7 +29,7 @@ export const Header = () => {
         return () => window.removeEventListener("resize", handleResize)
     }, []);
 
-    const handleNotificationClose = (event: any, reason?: string) => {
+    const handleNotificationClose = () => {
         setNotificationOpen(false);
     }
 
