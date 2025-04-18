@@ -69,12 +69,6 @@ export const Header = () => {
                             <button className='header-email-button' onClick={() => copyEmail()}>
                                 <AiOutlineMail color={'white'} size={'40px'} />
                             </button>
-
-                            <Snackbar open={notificationOpen} autoHideDuration={4000} onClose={handleNotificationClose}>
-                                <Alert onClose={handleNotificationClose} severity='success' variant='filled' sx={{ width: '100%' }}>
-                                    Email Copied to Clipboard
-                                </Alert>
-                            </Snackbar>
                         </div>
                  
                         <div className='mobile-menu'>
@@ -106,6 +100,12 @@ export const Header = () => {
                     </div>
                 </div>
             }
+
+            <Snackbar open={notificationOpen} autoHideDuration={4000} onClose={handleNotificationClose}>
+                <Alert onClose={handleNotificationClose} severity='success' variant='filled' sx={{ width: '100%' }}>
+                    Email Copied to Clipboard
+                </Alert>
+            </Snackbar>
         </div>
     )
 }
