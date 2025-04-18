@@ -78,8 +78,7 @@ export const Header = () => {
                             <AiOutlineMail color={'white'} size={'40px'} />
                             <Snackbar open={notificationOpen} autoHideDuration={4000} onClose={handleNotificationClose} action={action}>
                                 <Alert onClose={handleNotificationClose} severity='success' variant='filled' sx={{ width: '100%' }}>
-                                Email Copied to Clipboard
-
+                                    Email Copied to Clipboard
                                 </Alert>
                             </Snackbar>
                         </button>
