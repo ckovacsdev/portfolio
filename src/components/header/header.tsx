@@ -2,8 +2,10 @@ import LinkedinIcon from '../../assets/linkedinicon.png';
 import GithubIcon from '../../assets/githubicon.png';
 import { AiOutlineMail } from "react-icons/ai";
 import './header.css';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Fragment } from 'react';
 import Hamburger from 'hamburger-react';
+import Snackbar from '@mui/material/Snackbar';
+import IconButton from '@mui/material/IconButton';
 
 const LinkedInUrl = 'https://www.linkedin.com/in/christian-kovacs-23198b1b0/';
 const GitHubUrl = 'https://github.com/ckovacsdev';
@@ -11,6 +13,7 @@ const GitHubUrl = 'https://github.com/ckovacsdev';
 export const Header = () => {
 
     const [ isOpen, setOpen ] = useState(false);
+    const [ notificationOpen, setNotificationOpen ] = useState(false);
 
     // When the header menu dropdown is open on mobile mode, if the screen
     // resizes to be desktop sized, the state will be set to false
@@ -26,9 +29,22 @@ export const Header = () => {
         return () => window.removeEventListener("resize", handleResize)
     }, []);
 
+    const handleNotificationClose = (event: any, reason?: string) => {
+        setNotificationOpen(false);
+    }
+
+    const action = (
+        <Fragment>
+            <IconButton size='small' onClick={handleNotificationClose} aria-label='close' color='inherit'>
+                X
+            </IconButton>
+        </Fragment>
+    )
+
     const copyEmail = () => {
         let email:string = process.env.REACT_APP_CK_EMAIL as string;
-        navigator.clipboard.writeText(email)
+        navigator.clipboard.writeText(email);
+        setNotificationOpen(true);
     }
 
     return (
@@ -59,6 +75,7 @@ export const Header = () => {
                         
                         <button className='header-email-button' onClick={() => copyEmail()}>
                             <AiOutlineMail color={'white'} size={'40px'} />
+                            <Snackbar open={notificationOpen} autoHideDuration={4000} onClose={handleNotificationClose} message='Email Copied to Clipboard' action={action} />
                         </button>
                  
 
