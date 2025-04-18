@@ -65,22 +65,23 @@ export const Header = () => {
                             <img src={GithubIcon} alt="GitHub Icon with Link" className='header-icon github-icon'/> 
                         </a>
                         
-                        <button className='header-email-button' onClick={() => copyEmail()}>
-                            <AiOutlineMail color={'white'} size={'40px'} />
+                        <div>
+                            <button className='header-email-button' onClick={() => copyEmail()}>
+                                <AiOutlineMail color={'white'} size={'40px'} />
+                            </button>
+
                             <Snackbar open={notificationOpen} autoHideDuration={4000} onClose={handleNotificationClose}>
                                 <Alert onClose={handleNotificationClose} severity='success' variant='filled' sx={{ width: '100%' }}>
                                     Email Copied to Clipboard
                                 </Alert>
                             </Snackbar>
-                        </button>
+                        </div>
                  
-
                         <div className='mobile-menu'>
                             <Hamburger toggled={isOpen} toggle={setOpen} size={40} color='white'/>
                         </div>
                     </div>
                 </div>
-
             </div>
             
             {isOpen &&
