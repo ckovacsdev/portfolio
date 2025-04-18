@@ -2,10 +2,9 @@ import LinkedinIcon from '../../assets/linkedinicon.png';
 import GithubIcon from '../../assets/githubicon.png';
 import { AiOutlineMail } from "react-icons/ai";
 import './header.css';
-import { useEffect, useState, Fragment } from 'react';
+import { useEffect, useState } from 'react';
 import Hamburger from 'hamburger-react';
 import Snackbar from '@mui/material/Snackbar';
-import IconButton from '@mui/material/IconButton';
 import { Alert } from '@mui/material';
 
 const LinkedInUrl = 'https://www.linkedin.com/in/christian-kovacs-23198b1b0/';
@@ -33,14 +32,6 @@ export const Header = () => {
     const handleNotificationClose = (event: any, reason?: string) => {
         setNotificationOpen(false);
     }
-
-    const action = (
-        <Fragment>
-            <IconButton size='small' onClick={handleNotificationClose} aria-label='close' color='inherit'>
-                X
-            </IconButton>
-        </Fragment>
-    )
 
     const copyEmail = () => {
         let email:string = process.env.REACT_APP_CK_EMAIL as string;
@@ -76,7 +67,7 @@ export const Header = () => {
                         
                         <button className='header-email-button' onClick={() => copyEmail()}>
                             <AiOutlineMail color={'white'} size={'40px'} />
-                            <Snackbar open={notificationOpen} autoHideDuration={4000} onClose={handleNotificationClose} action={action}>
+                            <Snackbar open={notificationOpen} autoHideDuration={4000} onClose={handleNotificationClose}>
                                 <Alert onClose={handleNotificationClose} severity='success' variant='filled' sx={{ width: '100%' }}>
                                     Email Copied to Clipboard
                                 </Alert>
