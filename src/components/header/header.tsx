@@ -6,6 +6,7 @@ import { useEffect, useState, Fragment } from 'react';
 import Hamburger from 'hamburger-react';
 import Snackbar from '@mui/material/Snackbar';
 import IconButton from '@mui/material/IconButton';
+import { Alert } from '@mui/material';
 
 const LinkedInUrl = 'https://www.linkedin.com/in/christian-kovacs-23198b1b0/';
 const GitHubUrl = 'https://github.com/ckovacsdev';
@@ -75,7 +76,12 @@ export const Header = () => {
                         
                         <button className='header-email-button' onClick={() => copyEmail()}>
                             <AiOutlineMail color={'white'} size={'40px'} />
-                            <Snackbar open={notificationOpen} autoHideDuration={4000} onClose={handleNotificationClose} message='Email Copied to Clipboard' action={action} />
+                            <Snackbar open={notificationOpen} autoHideDuration={4000} onClose={handleNotificationClose} action={action}>
+                                <Alert onClose={handleNotificationClose} severity='success' variant='filled' sx={{ width: '100%' }}>
+                                Email Copied to Clipboard
+
+                                </Alert>
+                            </Snackbar>
                         </button>
                  
 
