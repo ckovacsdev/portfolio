@@ -4,6 +4,8 @@ import { AiOutlineMail } from "react-icons/ai";
 import './header.css';
 import { useEffect, useState } from 'react';
 import Hamburger from 'hamburger-react';
+import Snackbar from '@mui/material/Snackbar';
+import { Alert } from '@mui/material';
 
 const LinkedInUrl = 'https://www.linkedin.com/in/christian-kovacs-23198b1b0/';
 const GitHubUrl = 'https://github.com/ckovacsdev';
@@ -11,6 +13,7 @@ const GitHubUrl = 'https://github.com/ckovacsdev';
 export const Header = () => {
 
     const [ isOpen, setOpen ] = useState(false);
+    const [ notificationOpen, setNotificationOpen ] = useState(false);
 
     // When the header menu dropdown is open on mobile mode, if the screen
     // resizes to be desktop sized, the state will be set to false
@@ -26,9 +29,14 @@ export const Header = () => {
         return () => window.removeEventListener("resize", handleResize)
     }, []);
 
+    const handleNotificationClose = () => {
+        setNotificationOpen(false);
+    }
+
     const copyEmail = () => {
         let email:string = process.env.REACT_APP_CK_EMAIL as string;
-        navigator.clipboard.writeText(email)
+        navigator.clipboard.writeText(email);
+        setNotificationOpen(true);
     }
 
     return (
@@ -57,17 +65,17 @@ export const Header = () => {
                             <img src={GithubIcon} alt="GitHub Icon with Link" className='header-icon github-icon'/> 
                         </a>
                         
-                        <button className='header-email-button' onClick={() => copyEmail()}>
-                            <AiOutlineMail color={'white'} size={'40px'} />
-                        </button>
+                        <div>
+                            <button className='header-email-button' onClick={() => copyEmail()}>
+                                <AiOutlineMail color={'white'} size={'40px'} />
+                            </button>
+                        </div>
                  
-
                         <div className='mobile-menu'>
                             <Hamburger toggled={isOpen} toggle={setOpen} size={40} color='white'/>
                         </div>
                     </div>
                 </div>
-
             </div>
             
             {isOpen &&
@@ -92,6 +100,12 @@ export const Header = () => {
                     </div>
                 </div>
             }
+
+            <Snackbar open={notificationOpen} autoHideDuration={4000} onClose={handleNotificationClose}>
+                <Alert onClose={handleNotificationClose} severity='success' variant='filled' sx={{ width: '100%' }}>
+                    Email Copied to Clipboard
+                </Alert>
+            </Snackbar>
         </div>
     )
 }
