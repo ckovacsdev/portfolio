@@ -7,7 +7,6 @@ import { Alert } from '@mui/material';
 import { FaGithub } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
 
-
 const LinkedInUrl = 'https://www.linkedin.com/in/christian-kovacs-23198b1b0/';
 const GitHubUrl = 'https://github.com/ckovacsdev';
 
@@ -68,7 +67,7 @@ export const Header = () => {
                         
                         <div>
                             <button className='header-email-button' onClick={() => copyEmail()}>
-                                <AiOutlineMail color={'white'} size={'40px'} />
+                                <AiOutlineMail className='header-icon-email' color='white' />
                             </button>
                         </div>
                  
