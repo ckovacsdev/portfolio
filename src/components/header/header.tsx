@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import Hamburger from 'hamburger-react';
 import Snackbar from '@mui/material/Snackbar';
 import { Alert } from '@mui/material';
+import { FaGithub } from 'react-icons/fa';
 
 const LinkedInUrl = 'https://www.linkedin.com/in/christian-kovacs-23198b1b0/';
 const GitHubUrl = 'https://github.com/ckovacsdev';
@@ -62,7 +63,8 @@ export const Header = () => {
                             <img src={LinkedinIcon} alt="LinkedIn Icon with Link" className='header-icon'/> 
                         </a>
                         <a href={GitHubUrl} target='_blank' rel='noopener noreferrer'> 
-                            <img src={GithubIcon} alt="GitHub Icon with Link" className='header-icon github-icon'/> 
+                            {/* <img src={GithubIcon} alt="GitHub Icon with Link" className='header-icon github-icon'/>  */}
+                            <FaGithub className='header-icon' color='white' />
                         </a>
                         
                         <div>

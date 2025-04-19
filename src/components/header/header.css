@@ -53,11 +53,6 @@
     width: 30px;
 }
 
-.github-icon{
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
-}
-
 .header-email-button{
     color: none;
     background-color: #111111;
