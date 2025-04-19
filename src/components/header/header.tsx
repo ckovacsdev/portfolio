@@ -1,5 +1,4 @@
 import LinkedinIcon from '../../assets/linkedinicon.png';
-import GithubIcon from '../../assets/githubicon.png';
 import { AiOutlineMail } from "react-icons/ai";
 import './header.css';
 import { useEffect, useState } from 'react';
@@ -92,7 +91,7 @@ export const Header = () => {
                         </a>
 
                         <a href={GitHubUrl} target='_blank' rel='noopener noreferrer' className='dropdown-icon-container'> 
-                            <img src={GithubIcon} alt="GitHub Icon with Link" className='dropdown-icon gitlab-dropdown'/> 
+                            <FaGithub className='dropdown-icon' color='white'/>
                         </a>
 
                         <button className='dropdown-icon-container email-button-sub' onClick={() => copyEmail()}> 
