@@ -29,7 +29,7 @@ export const ProfileCard = () => {
                         <div className='profile-icon-name-pair'> <FaReact size={'25px'} color={'#61DBFB'} /> React </div>
                         <div className='profile-icon-name-pair'> <SiGraphql size={'25px'} color={'#E10098'} /> GraphQL </div>
                         <div className='profile-icon-name-pair'> <AiOutlineDotNet size={'40'} color={'#512bd4'} /> .NET Core </div>
-                        <div className='profile-icon-name-pair'> <FaGolang size={'40px'} color={'#29BEB0'} /> Go </div>
+                        <div className='profile-icon-name-pair'> <FaGolang size={'40px'} color={'#00ADD8'} /> Go </div>
                         <div className='profile-icon-name-pair'> <FaDocker size={'25px'} color={'#1D63ED'} /> Docker </div>
                     </div>
                 </div>
