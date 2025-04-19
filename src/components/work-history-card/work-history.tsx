@@ -79,9 +79,9 @@ export const WorkHistory = () => {
                     </div>
 
                     <div className='work-history-tags'>
-                        <Tag name='TypeScript' icon={<SiTypescript color={'#3178C6'} size={'18px'} />}/>
-                        <Tag name='React' icon={<FaReact color={'#61DBFB'} size={'18px'} />}/>
-                        <Tag name='.NET' icon={<SiDotnet color={'#512bd4'} size={'18px'} />}/>
+                        <Tag name='TypeScript' icon={<SiTypescript color={'#3178C6'} size={'20px'} />}/>
+                        <Tag name='React' icon={<FaReact color={'#61DBFB'} size={'20px'} />}/>
+                        <Tag name='.NET' icon={<SiDotnet color={'#512bd4'} size={'22px'} />}/>
                     </div>
                 </div>
             </div>
