@@ -1,11 +1,11 @@
-import LinkedinIcon from '../../assets/linkedinicon.png';
-import GithubIcon from '../../assets/githubicon.png';
 import { AiOutlineMail } from "react-icons/ai";
 import './header.css';
 import { useEffect, useState } from 'react';
 import Hamburger from 'hamburger-react';
 import Snackbar from '@mui/material/Snackbar';
 import { Alert } from '@mui/material';
+import { FaGithub } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
 
 const LinkedInUrl = 'https://www.linkedin.com/in/christian-kovacs-23198b1b0/';
 const GitHubUrl = 'https://github.com/ckovacsdev';
@@ -59,15 +59,15 @@ export const Header = () => {
                 <div className='header-section-container section-icons'>
                     <div className='header-icons'> 
                         <a href={LinkedInUrl} target='_blank' rel='noopener noreferrer'> 
-                            <img src={LinkedinIcon} alt="LinkedIn Icon with Link" className='header-icon'/> 
+                            <FaLinkedin className='header-icon' color='#0A66C2'/>
                         </a>
                         <a href={GitHubUrl} target='_blank' rel='noopener noreferrer'> 
-                            <img src={GithubIcon} alt="GitHub Icon with Link" className='header-icon github-icon'/> 
+                            <FaGithub className='header-icon' color='white' />
                         </a>
                         
                         <div>
                             <button className='header-email-button' onClick={() => copyEmail()}>
-                                <AiOutlineMail color={'white'} size={'40px'} />
+                                <AiOutlineMail className='header-icon-email' color='white' />
                             </button>
                         </div>
                  
@@ -86,11 +86,11 @@ export const Header = () => {
 
                     <div className='header-dropdown-item-icons'>
                         <a href={LinkedInUrl} target='_blank' rel='noopener noreferrer' className='dropdown-icon-container'> 
-                            <img src={LinkedinIcon} alt="LinkedIn Icon with Link" className='dropdown-icon'/> 
+                            <FaLinkedin className='dropdown-icon' color='#0A66C2'/>
                         </a>
 
                         <a href={GitHubUrl} target='_blank' rel='noopener noreferrer' className='dropdown-icon-container'> 
-                            <img src={GithubIcon} alt="GitHub Icon with Link" className='dropdown-icon gitlab-dropdown'/> 
+                            <FaGithub className='dropdown-icon' color='white'/>
                         </a>
 
                         <button className='dropdown-icon-container email-button-sub' onClick={() => copyEmail()}> 

@@ -49,13 +49,22 @@
 }
 
 .header-icon{
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
+}
+.header-icon:hover{
+    height: 40px;
+    width: 40px;
 }
 
-.github-icon{
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
+.header-icon-email{
+    height: 45px;
+    width: 45px;
+}
+
+.header-icon-email:hover{
+    height: 50px;
+    width: 50px;
 }
 
 .header-email-button{
